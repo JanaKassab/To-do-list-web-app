@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background: #000430;
+    --secondaryBackground: #171c48;
+    --text: #fff;
+    --purple: #828dff;
+    --teal: #24feee;
+}
+
+body {
+    background: url(./img/b5.webp) no-repeat center center fixed;
+    background-size: cover;
+    color: var(--text);
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.date-hour {
+    color: var(--text);
+    text-align: center;
+    font-size: 1.2rem;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px; 
+    position: absolute;
+    top: 50px; 
+    left: 50%;
+    transform: translateX(-50%); 
+}
+
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 500px;
+    width: 100%;
+    padding: 20px;
+    background-color: transparent;
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin-bottom: 40px; 
+}
+
+.details {
+    width: 100%;
+}
+
+.details p{
+    margin-top: 20px;
+}
+#progressBar {
+    width: 100%;
+    height: 10px;
+    background-color: var(--secondaryBackground);
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+#progress {
+    width: 0%;
+    height: 10px;
+    background-color: var(--teal);
+    border-radius: 5px;
+    transition: width 0.3s ease;
+}
+
+.stats-container {
+    padding: 30px;
+    border-radius: 20px;
+    border: 2px solid var(--purple);
+    display: flex;
+    gap: 50px;
+    width: 100%;
+    justify-content: space-between;
+    background: var(--background);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.stats-numbers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#numbers {
+    width: 100px;
+    height: 100px;
+    background-color: var(--purple);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--text);
+}
+
+form {
+    width: 100%;
+    max-width: 400px; /* Limit the form's maximum width */
+    display: flex;
+    gap: 10px; /* Add some spacing between input and button */
+    margin-top: 20px; /* Space between the container and the form */
+}
+
+input {
+    flex: 1;
+    padding: 16px;
+    background: var(--secondaryBackground);
+    border: 1px solid var(--purple);
+    border-radius: 10px;
+    outline: none;
+    color: var(--text);
+    min-width: 0; /* Prevents the input from shrinking to zero if flex is used */
+}
+
+button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--purple);
+    color: var(--text);
+    font-size: 30px;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--teal);
+    transition: background-color 0.3s ease;
+}
+
+#task-list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 30px;
+    width: 100%;
+    list-style: none;
+}
+
+.taskItem{
+    width: 100%;
+    display: flex;
+    background-color: #171c48;
+    padding: 10px;
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.task{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.task input{
+    width: 15px;
+    height: 15px;
+
+}
+
+.completed p{
+    text-decoration: line-through;
+    color: #24feee;
+}
+
+.taskItem img{
+    width: 24px;
+    height: 24px;
+    margin: 0px 10;
+    cursor: pointer;
+}
