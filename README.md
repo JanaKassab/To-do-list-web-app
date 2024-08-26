@@ -24,8 +24,8 @@ To get started with the To-Do List Web Application, follow these steps:
 ### 1. 📥 Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/to-do-list-web-app.git
-cd to-do-list-web-app
+git clone https://github.com/your-username/To-do-list-web-app.git
+cd To-do-list-web-app
 ```
 
 ### 2. 🛠️ Set Up the Project
