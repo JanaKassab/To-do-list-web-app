@@ -1,7 +1,3 @@
-Certainly! Here's the README file with added emojis to make it more engaging:
-
----
-
 # 📝 To-Do List Web Application
 
 ## 🌟 Overview
